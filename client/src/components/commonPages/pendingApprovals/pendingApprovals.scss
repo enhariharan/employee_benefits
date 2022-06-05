@@ -1,0 +1,14 @@
+@import '../../../assets/scss/base.scss';
+
+.hpr-bulk-status-wrapper {
+  color: lighten($primary-color, 20%);
+  margin-left: 20px;
+  cursor: pointer;
+  &.hpr-disabled-element {
+    color: lighten($secondary-background, 30%);
+  }
+
+  svg {
+    font-size: 1.2rem;
+  }
+}

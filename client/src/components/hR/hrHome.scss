@@ -1,0 +1,78 @@
+@import '../../assets/scss/base.scss';
+
+$maxWidth: '992px';
+$max-mobile-width: '768px';
+
+.hpr_mainContent {
+  overflow: hidden;
+  margin-left: 240px;
+
+  @media (max-width: $maxWidth) {
+    margin-left: 0;
+  }
+
+  .hpr_pageContentWrapper {
+    padding: 90px 15px 50px;
+
+    @media only screen and (max-width: $max-mobile-width) {
+      padding-top: 65px;
+    }
+
+    .hpr_tableHeadingWrapper {
+      .hpr_tableSearchWrapper {
+        .MuiOutlinedInput-input {
+          padding: 10px;
+          background-color: $white-background;
+          font-size: 0.8rem;
+          margin-right: 10px;
+        }
+
+        svg {
+          color: lighten($black-color, 60%);
+        }
+      }
+    }
+
+    .hpr_commonTableWrapper {
+      .MuiTableHead-root {
+        th {
+          font-weight: 600;
+        }
+      }
+
+      .hpr_tableStatus {
+        @include border-radius(10px);
+        padding: 2px 10px;
+        font-size: 0.7rem;
+
+        &.hpr_tableStatusActive {
+          background-color: lighten($secondary-color, 20%);
+          color: darken($secondary-color, 30%);
+        }
+
+        &.hpr_tableStatusPending {
+          background-color: lighten($error-color, 20%);
+          color: darken($error-color, 30%);
+        }
+
+        &.hpr_tableStatusOpen {
+          background-color: lighten($black-color, 80%);
+          color: darken($black-color, 30%);
+        }
+      }
+
+      .hpr_tableActionWrapper {
+        .hpr_tableActionEllipsis {
+          font-size: 1.2rem;
+          color: lighten($black-color, 60%);
+          cursor: pointer;
+          margin-right: 15px;
+        }
+
+        .hpr_tableActionDelete {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}

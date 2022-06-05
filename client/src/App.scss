@@ -1,0 +1,503 @@
+@import '~bootstrap-4-grid/scss/grid.scss';
+@import './assets/scss/base.scss';
+
+input[type='number']::-webkit-inner-spin-button {
+  opacity: 1;
+}
+
+// Start View Common Component Details
+.hpr-view-details-row-wrapper {
+  .row {
+    align-items: flex-start !important;
+  }
+}
+
+.hrp-error-text-elem {
+  color: $primary-color;
+}
+
+.hpr-rupee-sym-mis-table {
+  font-size: 0.8rem;
+  color: lighten($black-color, 40%);
+}
+
+.hpr-view-details-label-value-wrapper {
+  width: 100%;
+  margin: 0 0 15px;
+
+  .hrp-vd-label {
+    width: 100%;
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  .hrp-vd-value {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+}
+
+// End View Common Component Details
+
+.MuiDialog-root {
+  .MuiPickersModal-dialogRoot {
+    .MuiButton-textPrimary {
+      color: $primary-color;
+    }
+
+    .MuiDialogContent-root {
+      margin: 0;
+
+      .MuiPickersToolbar-toolbar {
+        background-color: lighten($primary-color, 45%);
+      }
+
+      .MuiPickersDay-daySelected,
+      .MuiPickersDay-daySelected:hover {
+        background-color: $primary-color;
+      }
+
+      .MuiTypography-colorPrimary,
+      .MuiPickersToolbarText-toolbarTxt,
+      .MuiPickersToolbarText-toolbarBtnSelected {
+        color: $primary-color;
+      }
+    }
+    .MuiPickersToolbarText-toolbarTxt {
+      color: lighten($primary-color, 20%) !important;
+    }
+    .MuiPickersToolbarText-toolbarBtnSelected {
+      color: $primary-color !important;
+    }
+  }
+  .MuiPickersClock-container {
+    .MuiPickersClockPointer-pointer,
+    .MuiPickersClockPointer-noPoint,
+    .MuiPickersClock-pin {
+      background-color: $primary-color;
+    }
+    .MuiPickersClockPointer-thumb {
+      border-color: $primary-color;
+    }
+    .MuiPickersClockNumber-clockNumberSelected {
+      color: $white-background;
+    }
+  }
+  .MuiTypography-h3 {
+    font-size: 2.5rem;
+  }
+}
+
+.hpr-anchor-text {
+  text-decoration: none;
+}
+
+.hpr-disabled-element {
+  opacity: 0.4;
+}
+
+.hpr-alert-wrapper {
+  background-color: lighten($primary-color, 35%);
+  border: solid 1px lighten($primary-color, 20%);
+  position: relative;
+
+  .MuiAlert-message {
+    width: 92%;
+  }
+
+  .hpr-alert-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  .hpr-alert-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .hpr-alert-id-wrapper {
+    .hpr-alert-id-elem {
+      font-size: 0.8rem;
+      display: inline-block;
+      padding-left: 10px;
+      position: relative;
+
+      &::before {
+        content: ',';
+        position: absolute;
+        left: 1px;
+      }
+
+      &:first-of-type {
+        padding: 0;
+
+        &::before {
+          content: '';
+          position: relative;
+          left: auto;
+        }
+      }
+    }
+  }
+}
+
+.hpr-help-wrapper {
+  cursor: pointer;
+
+  svg {
+    color: lighten($black-color, 25%);
+  }
+}
+
+Button.hpr-download-template-wrapper {
+  font-size: 0.65rem;
+  padding: 4px 10px;
+  color: $white-background;
+  background-color: lighten($primary-text-color, 40%);
+  font-weight: normal;
+  margin: 0 0 0 10px;
+
+  &:hover {
+    background-color: lighten($primary-text-color, 30%);
+  }
+}
+
+.hpr-btns-wrapper {
+  .hpr-primary-btn {
+    background-color: $primary-color;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: $white-background;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
+
+.hpr_pageHeadingWrapper {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 100%;
+
+  @media only screen and (max-width: $max-mobile-width) {
+    flex-wrap: wrap;
+  }
+
+  .hpr_page-heading-left-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+
+    @media only screen and (max-width: $max-mobile-width) {
+      flex: 1 1 100%;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      color: $secondary-background;
+      font-weight: 600;
+      display: inline-flex;
+      position: relative;
+      margin: 0;
+
+      @media only screen and (max-width: $max-mobile-width) {
+        font-size: 1rem;
+        margin: 0;
+      }
+    }
+
+    .hpr-breadcrumb-wrapper {
+      margin: 0 15px 0 0;
+      padding: 0 15px 0 0;
+      font-size: 0.9em;
+      border-right: solid 1px lighten($black-color, 65%);
+
+      a {
+        color: $primary-color;
+        text-decoration: none;
+      }
+
+      svg {
+        font-size: 0.6em;
+      }
+    }
+  }
+}
+
+.hpr-table-status-wrapper {
+  display: flex;
+  align-items: center;
+
+  .table-status {
+    padding: 3px 10px;
+    @include border-radius(5px);
+    font-size: 0.7rem;
+    color: $white-background;
+
+    &.__active {
+      background-color: lighten($secondary-color, 10%);
+    }
+
+    &.__created {
+      background-color: lighten($secondary-background, 30%);
+    }
+
+    &.__pending {
+      background-color: lighten($primary-color, 25%);
+    }
+
+    &.__deactive {
+      background-color: lighten($black-color, 60%);
+    }
+  }
+}
+
+.hpr-flex-table-filter-sort-wrapper {
+  .MuiInputLabel-outlined {
+    transform: translate(14px, 11px) scale(1);
+  }
+
+  display: flex;
+
+  @media only screen and (max-width: $max-mobile-width) {
+    margin: 20px 0 0;
+    flex-wrap: wrap;
+  }
+
+  .input-adornment-custom-wrapper {
+    button {
+      border-radius: 0;
+    }
+
+    svg {
+      font-size: 0.9rem;
+    }
+  }
+
+  .hpr-filter-sort-submit {
+    background-color: $primary-color;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: $white-background;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+
+    &.Mui-disabled {
+      background-color: lighten($black-color, 80%);
+      cursor: not-allowed;
+    }
+
+    @media only screen and (max-width: $max-mobile-width) {
+      width: calc(50% - 16px);
+      height: 36px;
+    }
+  }
+
+  .hpr-auto-complete-table {
+    width: 150px;
+
+    @media only screen and (max-width: $max-mobile-width) {
+      width: calc(50% - 16px) !important;
+      margin-bottom: 10px;
+    }
+
+    &.hpr-auto-complete-hospital {
+      width: 180px;
+      margin-right: 5px;
+    }
+
+    &.hpr-auto-complete-pincode {
+      width: 130px;
+      margin-right: 5px;
+    }
+
+    &.hpr-auto-complete-city {
+      width: 110px;
+      margin-right: 5px;
+    }
+
+    .MuiFormControl-root {
+      width: 100%;
+      margin: 0;
+
+      .MuiFormLabel-root {
+        font-size: 1em;
+      }
+
+      .MuiInputBase-root {
+        padding: 5px 9px;
+
+        .MuiAutocomplete-input {
+          padding: 6px 4px;
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}
+
+.table-action-ellipsis-cursor {
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+$table-flex-heading-color: lighten($secondary-background, 10%);
+
+/* Table Flex 
+================================== */
+.hpr-flex-table {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 3em 0;
+  padding: 0;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+
+  .MuiCheckbox-root {
+    color: lighten($primary-color, 20%);
+  }
+
+  .MuiCheckbox-colorSecondary.Mui-checked {
+    color: lighten($primary-color, 20%);
+  }
+
+  .hpr-flex-table-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    &.hpr-flex-table-row--head {
+      background-color: $table-flex-heading-color;
+
+      .MuiCheckbox-root {
+        padding: 0 0 0 9px;
+      }
+    }
+
+    .hpr-flex-table-cell {
+      box-sizing: border-box;
+      flex-grow: 1;
+      padding: 0.8em 1.2em;
+      overflow: hidden; // Or flex might break
+      list-style: none;
+      display: flex;
+      align-self: center;
+
+      &.hpr-flex-table-column-heading {
+        color: $white-background;
+        padding: 0.8em 1.2em;
+        font-size: 1em;
+        font-weight: 500;
+      }
+
+      .hpr-flex-table-cell--heading {
+        display: none;
+      }
+    }
+
+    &:last-child {
+      padding-bottom: 15px;
+    }
+  }
+}
+
+/* Responsive
+==================================== */
+@media all and (max-width: $break-point) {
+  .hpr-flex-table--collapse {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+    box-shadow: none;
+
+    .hpr-flex-table-row {
+      box-sizing: border-box;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+
+      .hpr-flex-table-cell {
+        width: 100% !important;
+        display: flex;
+        align-items: center;
+
+        .hpr-flex-table-cell--heading {
+          display: inline-block;
+          flex: 1;
+          max-width: 80px;
+          min-width: 80px;
+          color: $table-flex-heading-color;
+          font-weight: 500;
+          margin-right: 1em;
+          padding-right: 10px;
+        }
+
+        .hpr-flex-table-cell--content {
+          font-weight: normal;
+          flex: 2;
+          padding-left: 1em;
+        }
+      }
+    }
+
+    .hpr-flex-table-topic-cell {
+      background-color: $table-flex-heading-color;
+      color: white;
+      font-weight: 700;
+      order: -1;
+
+      .hpr-flex-table-cell--content {
+        padding-left: 0 !important;
+      }
+    }
+
+    .hpr-flex-table-row--head {
+      display: none;
+    }
+  }
+}
+
+// Non-Flex modernizer fallback
+.no-flexbox .hpr-flex-table {
+  display: block;
+
+  &.hpr-flex-table-cell {
+    width: 100%;
+  }
+}
+
+.hpr_formPrimaryBtnWrapper {
+  button {
+    background-color: $primary-color;
+    color: $white-background;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
+
+.hpr_formSecondaryBtnWrapper {
+  button {
+    background-color: lighten($black-color, 85%);
+    color: lighten($black-color, 30%);
+
+    &:hover {
+      background-color: lighten($black-color, 75%);
+    }
+  }
+}

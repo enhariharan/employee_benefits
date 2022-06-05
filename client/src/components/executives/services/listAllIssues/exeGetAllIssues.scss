@@ -1,0 +1,20 @@
+@import '../../../../assets/scss/base.scss';
+
+.hpr-exe-services-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  .hpr-exe-service-fDate-txt-wrapper {
+    width: 140px;
+    margin-right: 5px;
+  }
+
+  .hpr-exe-service-fDate-txt-wrapper {
+    .MuiOutlinedInput-input {
+      padding: 10.5px 14px;
+    }
+    svg {
+      color: lighten($primary-color, 30%);
+    }
+  }
+}

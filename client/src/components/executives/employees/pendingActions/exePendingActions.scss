@@ -1,0 +1,36 @@
+@import '../../../../assets/scss/base.scss';
+
+.employee-pending-filter-wrapper {
+  .exe-pa-select-corporate-wrapper {
+    width: 200px;
+    margin-right: 5px;
+    @media only screen and (max-width: $max-mobile-width) {
+      flex: 1 1 100%;
+      margin: 0 0 10px;
+    }
+  }
+  .exe-pa-select-emp-type-wrapper {
+    width: 150px;
+    margin-right: 5px;
+    @media only screen and (max-width: $max-mobile-width) {
+      flex: 1 1 100%;
+      margin: 0 0 10px;
+    }
+  }
+  .exe-pa-select-status-wrapper {
+    width: 150px;
+    margin-right: 5px;
+    @media only screen and (max-width: $max-mobile-width) {
+      flex: 1 1 100%;
+      margin: 0 0 10px;
+    }
+  }
+  .exe-pa-select-approve-wrapper {
+    width: 150px;
+    margin-right: 5px;
+    @media only screen and (max-width: $max-mobile-width) {
+      flex: 1 1 100%;
+      margin: 0 0 10px;
+    }
+  }
+}

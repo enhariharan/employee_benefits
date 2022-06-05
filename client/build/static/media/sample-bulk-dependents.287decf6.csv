@@ -1,0 +1,3 @@
+﻿empid,firstName,lastName,relationship,gender,dob
+emp123,dep1,123,son,Male,dd/mm/yyyy
+emp456,dep1,456,son,Male,dd/mm/yyyy

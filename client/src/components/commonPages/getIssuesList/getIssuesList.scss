@@ -1,0 +1,27 @@
+@import '../../../assets/scss/base.scss';
+
+.hpr-reply-issue-dialog {
+  .MuiDialog-paperWidthSm {
+    min-width: 400px;
+  }
+  .MuiFormControl-root {
+    width: 100%;
+  }
+  .MuiDialogContentText-root {
+    padding-top: 10px;
+  }
+  .MuiOutlinedInput-input {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  .MuiInputBase-multiline {
+    .MuiOutlinedInput-input {
+      padding: 0;
+    }
+  }
+  .hpr-exe-service-fDate-txt-wrapper {
+    svg {
+      color: lighten($primary-color, 30%);
+    }
+  }
+}

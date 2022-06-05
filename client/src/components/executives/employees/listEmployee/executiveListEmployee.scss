@@ -1,0 +1,43 @@
+@import '../../../../assets/scss/base.scss';
+
+.employee-get-list-filter-wrapper {
+  .egl-corporate-select-wrapper {
+    width: 150px;
+    margin-right: 5px;
+  }
+  .egl-emp-type-select-wrapper {
+    width: 130px;
+    margin-right: 5px;
+  }
+  .egl-status-select-wrapper {
+    width: 140px;
+    margin-right: 5px;
+  }
+  .egl-approve-type-select-wrapper {
+    width: 150px;
+    margin-right: 5px;
+  }
+  .egl-emp-textbox-wrapper {
+    width: 140px;
+    .MuiInputBase-input {
+      font-size: 0.9rem;
+    }
+
+    .MuiOutlinedInput-adornedEnd {
+      padding-right: 0;
+    }
+
+    @media only screen and (max-width: $max-mobile-width) {
+      flex: 1 1 100%;
+      margin: 0 0 10px;
+    }
+  }
+}
+.employee-get-list-filter-data-count-wrapper {
+  display: block;
+  margin-top: 5px;
+  .employee-get-list-filter-data-count {
+    color: $primary-color;
+    font-weight: bold;
+  }
+}

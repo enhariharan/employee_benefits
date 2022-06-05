@@ -1,0 +1,11 @@
+/node_modules
+/.history
+*.database.sqlite3
+.idea/
+logs/
+doc/apidoc/
+.env
+config/subdomains.development.json
+config/subdomains.prod.json
+config/subdomains.staging.json
+config/subdomains.test.json

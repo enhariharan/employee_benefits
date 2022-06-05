@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d4a7cb82.chunk.css",
+    "main.js": "/static/js/main.889f5c3f.chunk.js",
+    "main.js.map": "/static/js/main.889f5c3f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.09f5d9dc.js",
+    "runtime-main.js.map": "/static/js/runtime-main.09f5d9dc.js.map",
+    "static/js/2.cd06236a.chunk.js": "/static/js/2.cd06236a.chunk.js",
+    "static/js/2.cd06236a.chunk.js.map": "/static/js/2.cd06236a.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.4feb8f08f380db2908c077d0a9d157a0.js": "/precache-manifest.4feb8f08f380db2908c077d0a9d157a0.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.d4a7cb82.chunk.css.map": "/static/css/main.d4a7cb82.chunk.css.map",
+    "static/js/2.cd06236a.chunk.js.LICENSE.txt": "/static/js/2.cd06236a.chunk.js.LICENSE.txt",
+    "static/media/Aboutus.png": "/static/media/Aboutus.da25111c.png",
+    "static/media/footerBanner.png": "/static/media/footerBanner.5e392759.png",
+    "static/media/profile3.jpg": "/static/media/profile3.d80dba67.jpg",
+    "static/media/sample-bulk-dependents.csv": "/static/media/sample-bulk-dependents.287decf6.csv",
+    "static/media/sample-bulk-employee.csv": "/static/media/sample-bulk-employee.f667cbfe.csv",
+    "static/media/visista-logo-2.png": "/static/media/visista-logo-2.574df607.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.09f5d9dc.js",
+    "static/js/2.cd06236a.chunk.js",
+    "static/css/main.d4a7cb82.chunk.css",
+    "static/js/main.889f5c3f.chunk.js"
+  ]
+}

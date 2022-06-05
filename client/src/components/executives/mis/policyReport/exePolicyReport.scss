@@ -1,0 +1,114 @@
+@import '../../../../assets/scss/base.scss';
+
+.hpr-policy-report-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  .hpr-pr-corporate-txt-wrapper {
+    width: 160px;
+    margin-right: 5px;
+  }
+  .hpr-pr-policy-txt-wrapper {
+    width: 160px;
+    margin-right: 5px;
+  }
+  .hpr-pr-fDate-txt-wrapper {
+    width: 140px;
+    margin-right: 5px;
+  }
+  .hpr-pr-tDate-txt-wrapper {
+    width: 140px;
+  }
+
+  .hpr-pr-filter-go-btn {
+    padding: 8px;
+    margin-left: 5px;
+  }
+
+  .hpr-pr-corporate-txt-wrapper,
+  .hpr-pr-policy-txt-wrapper,
+  .hpr-pr-fDate-txt-wrapper,
+  .hpr-pr-tDate-txt-wrapper {
+    .MuiOutlinedInput-input {
+      padding: 10.5px 14px;
+    }
+    svg {
+      color: lighten($primary-color, 30%);
+    }
+  }
+  .hpr-premium-reports-data-wrapper {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    .hpr-prd-row {
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-basis: calc(33.33% - 15px);
+      margin-right: 15px;
+      margin-bottom: 15px;
+      .hpr-flex-table {
+        height: 100%;
+        .hpr-flex-table-row.hpr-flex-table-row--head {
+          height: 50px;
+          padding: 0;
+          &.hpr-flex-table-row--head-claims-report {
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px 0;
+            .hpr-flex-table-column-heading {
+              display: flex;
+              justify-items: center;
+              flex-wrap: wrap;
+              padding: 0 10px;
+              .hpr-head-claims-report-child {
+                flex-grow: 0;
+                flex-shrink: 0;
+                flex-basis: 100%;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 15px;
+                div {
+                  display: flex;
+                  flex-grow: 0;
+                  flex-shrink: 0;
+                  flex-basis: 33.33%;
+                  padding: 0 5px;
+                }
+                &.--total {
+                  div {
+                    flex-basis: 20%;
+                  }
+                }
+              }
+              .hpr-head-claims-report-child:last-child {
+                margin: 0;
+                font-weight: normal;
+              }
+            }
+          }
+        }
+        .hpr-claims-report-multy-col-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          justify-items: center;
+          padding: 0.8em 10px;
+          div {
+            display: flex;
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 33.33%;
+            padding: 0 5px;
+          }
+          &.--total {
+            div {
+              flex-basis: 20%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

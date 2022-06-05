@@ -1,0 +1,63 @@
+@import '../../../../assets/scss/base.scss';
+.hpr-alert-pending-actions {
+  &.MuiAlert-standardError {
+    background-color: lighten($black-color, 90%);
+    border-color: lighten($black-color, 80%);
+    .hpr-alert-pa-number {
+      font-weight: 600;
+    }
+  }
+}
+.employee-pending-filter-wrapper {
+  .status-select-wrapper,
+  .approve-type-select-wrapper,
+  .emp-id-text-wrapper {
+    .MuiSelect-selectMenu,
+    .MuiInputLabel-formControl {
+      font-size: 0.9rem;
+    }
+  }
+
+  .emp-id-text-wrapper {
+    width: 150px;
+    margin-right: 15px;
+
+    .MuiInputBase-input {
+      font-size: 0.9rem;
+    }
+
+    .MuiOutlinedInput-adornedEnd {
+      padding-right: 0;
+    }
+
+    @media only screen and (max-width: $max-mobile-width) {
+      flex: 1 1 100%;
+      margin: 0 0 10px;
+    }
+  }
+
+  .status-select-wrapper {
+    width: 200px;
+    margin-right: 5px;
+
+    @media only screen and (max-width: $max-mobile-width) {
+      flex: 1 1 100%;
+      margin: 0 0 10px;
+    }
+  }
+
+  .approve-type-select-wrapper {
+    width: 150px;
+    margin-right: 5px;
+
+    @media only screen and (max-width: $max-mobile-width) {
+      flex: 1 1 70%;
+    }
+  }
+
+  .filter-go-btn {
+    @media only screen and (max-width: $max-mobile-width) {
+      flex: 1 1 calc(30% - 10px);
+    }
+  }
+}

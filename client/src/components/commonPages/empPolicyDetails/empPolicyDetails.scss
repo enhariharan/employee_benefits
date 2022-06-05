@@ -1,0 +1,17 @@
+@import '../../../assets/scss/base.scss';
+
+.hpr-emp-pd-wrapper {
+  padding: 15px 0;
+  font-size: 1em;
+  .row {
+    margin: 0 0 7px;
+    padding: 0 0 10px;
+    border-bottom: solid 1px lighten($black-color, 90%);
+    align-items: center;
+    &:last-child {
+      border: none;
+      margin: 0;
+      padding-bottom: 0;
+    }
+  }
+}

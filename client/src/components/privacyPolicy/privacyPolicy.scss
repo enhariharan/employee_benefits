@@ -1,0 +1,21 @@
+@import '../../assets/scss/base.scss';
+
+.hpr-static-page-wrapper {
+  padding: 90px 15px 50px;
+  .hpr-static-pagination_icon {
+    a {
+      color: $secondary-background;
+      margin-right: 10px;
+      padding-right: 10px;
+      border-right: solid 1px $secondary-background;
+    }
+  }
+}
+.hpr-coming-soon-text {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: lighten($primary-color, 35%);
+}

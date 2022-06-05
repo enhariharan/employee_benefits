@@ -1,0 +1,144 @@
+@import '../../assets/scss/base.scss';
+
+.hpr_loginBGWrapper {
+  .MuiOutlinedInput-input {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+  .hpr-login-bg {
+    background-color: $white-background;
+    .hpr-login-left-panel {
+      border-right: solid 1px lighten($black-color, 80%);
+      img {
+        height: 85%;
+      }
+      @media only screen and (min-width: $max-mobile-width) {
+        align-items: center;
+        display: flex !important;
+        justify-content: center;
+      }
+    }
+    .hpr-login-right-panel {
+      display: flex;
+      align-items: center;
+      flex-flow: row wrap;
+    }
+  }
+
+  .MuiInputBase-input {
+    font-size: 0.9rem;
+  }
+
+  .hpr_formSubmit {
+    background-color: $primary-color;
+    font-size: 0.9rem;
+    color: $white-background;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+
+  background-color: $primary-background;
+  height: 100vh;
+
+  .hpr_loginBoxWrapper {
+    width: 95%;
+    margin: 0 auto;
+    background-color: $white-background;
+    @include border-radius(5px);
+
+    .hpr_lRHeaderWrapper {
+      background-color: $secondary-background;
+      @include border-top-radius(5px);
+      display: flex;
+      padding: 20px 15px;
+      align-items: center;
+      .hpr_lRTxtWrapper {
+        color: $white-background;
+        font-size: 1rem;
+
+        span {
+          font-size: 0.8rem;
+        }
+      }
+    }
+
+    .hpr_lRFormFieldsWrapper {
+      width: 100%;
+      padding: 15px 0;
+      font-size: 0.9rem;
+
+      .hpr_lRTxtFieldsWrapper {
+        width: 100%;
+        margin-bottom: 10px;
+
+        .MuiFormControl-root {
+          width: 100%;
+
+          &.error {
+            .MuiOutlinedInput-notchedOutline {
+              border-color: $primary-color;
+            }
+          }
+
+          svg {
+            font-size: 1rem;
+            color: lighten($black-color, 60%);
+          }
+
+          input {
+            padding-left: 10px;
+          }
+        }
+
+        svg.MuiSelect-icon {
+          font-size: 1.5rem;
+        }
+
+        .hpr_lRTxtFieldsError {
+          width: 100%;
+          color: $error-color;
+          font-size: 0.8rem;
+        }
+
+        .MuiCheckbox-colorSecondary.Mui-checked {
+          color: $secondary-background;
+        }
+
+        .MuiTypography-body1 {
+          font-size: 0.8rem;
+          color: lighten($black-color, 40%);
+        }
+
+        .MuiSelect-root {
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+  .hpr_login-footer-privacy-wrapper {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    .hpr-footer-content {
+      margin: 20px 0 10px;
+      display: block;
+      font-size: 0.8rem;
+    }
+    .hpr-footer-content-link {
+      a {
+        color: $primary-text-color;
+        text-decoration: underline;
+        margin-right: 10px;
+        padding-right: 10px;
+        border-right: solid 1px $primary-text-color;
+        font-size: 0.8rem;
+      }
+      a:last-child {
+        border: none;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Employee Benefits Server",
+  "version": "1.0.0",
+  "description": "REST API Documentation for Employee Benefits Server",
+  "title": "Employee Benefits Server REST API Docs",
+  "url": "http://localhost:3000/api/v1"
+}

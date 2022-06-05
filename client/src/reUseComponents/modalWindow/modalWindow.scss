@@ -1,0 +1,78 @@
+@import '../../assets/scss/base.scss';
+
+.MuiDialog-root {
+  .MuiTypography-h6 {
+    font-family: $font-family-base;
+    letter-spacing: 0;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: lighten($black-color, 20%);
+  }
+
+  .MuiDialogContent-root {
+    overflow-x: hidden;
+    padding: 0 24px;
+  }
+
+  .MuiDialogTitle-root {
+    padding: 16px 24px;
+    background-color: lighten($black-color, 85%);
+  }
+
+  .MuiTypography-body1 {
+    font-family: $font-family-base;
+    letter-spacing: 0;
+    @include fontLineHeight(0.9em, 0.9em/70 * 100em);
+    color: lighten($black-color, 30%);
+    margin: 0;
+    text-align: left;
+    word-spacing: -1px;
+
+    // span {
+    //     color: $danger-color;
+    // }
+
+    img {
+      width: 100%;
+      background-color: lighten($black-color, 60%);
+      margin: 20px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .MuiDialogActions-root {
+    padding: 20px 30px;
+  }
+
+  .MuiDialogContent-root {
+    margin-top: 20px;
+    min-height: 50px;
+  }
+
+  .MuiButton-root {
+    margin-left: 15px;
+  }
+
+  .modal-description {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+    .bold-txt-desc {
+      font-size: 1.1rem;
+    }
+  }
+
+  .modal-primary-btn {
+    background-color: $primary-color;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: $white-background;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
